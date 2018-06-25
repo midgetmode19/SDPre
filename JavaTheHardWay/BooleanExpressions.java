@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class BooleanExpressions{
+  public static void main(String[] args){
+    Scanner keyboard = new Scanner(System.in);
+    boolean a, b, c, d, e, f;
+    double x, y;
+
+    /*I have been using println in all of my code because
+    I prefer the way it displays in the command prompt.*/
+
+    System.out.println("\nGive me two numbers. \nFirst: ");
+    x = keyboard.nextDouble();
+    System.out.println("Second: ");
+    y = keyboard.nextDouble();
+
+    a = (x < y);
+    b = (x <= y);
+    c = (x == y);
+    d = (x != y);
+    e = (x > y);
+    f = (x >= y);
+
+    System.out.println(x + " is LESS THAN " + y + ": " + a);
+    System.out.println(x + " is LESS THAN OR EQUAL TO " + y + ": " +b);
+    System.out.println(x + " is EQUAL TO " + y + ": " + c);
+    System.out.println(x + " is NOT EQUAL TO " + y + ": " + d);
+    System.out.println(x + " is GREATER THAN " + y + ": " + e);
+    System.out.println(x + " is GREATER THAN OR EQUAL TO " + y + ": " +f);
+    System.out.println();
+
+    System.out.println( !(x < y) + " " + (x >= y) );
+    System.out.println( !(x <= y) + " " + (x > y) );
+    System.out.println( !(x == y) + " " + (x != y) );
+    System.out.println( !(x != y) + " " + (x == y) );
+    System.out.println( !(x > y) + " " + (x <= y) );
+    System.out.println( !(x >= y) + " " + (x < y) );
+
+    //less than is <
+    //greater than is >
+    //less than or equal to is <=
+    //greater than or equal to is >=
+    //exactly equal to is ==
+    //does not equal is !=
+
+  }
+}
